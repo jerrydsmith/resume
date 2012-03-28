@@ -1,0 +1,157 @@
+% Jerry_Smith_resume.tex
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+%\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\resheading}[1]{{\large{\colorbox{MyGrey}{\textbf{\fontfamily{phv}\selectfont #1 \vphantom{p\^{E}}}}}}}
+%\newcommand{\resheading}[1]{{\large{\textbf{\fontfamily{phv}\selectfont #1 \vphantom{p\^{E}}}}}}
+%\newcommand{\resheading}[1]{{\large{\textbf{\textcolor{MyNameColor}{\fontfamily{phv}\selectfont #1 \vphantom{p\^{E}}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\usepackage{mathpazo}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{MyNameColor}{rgb}{0.18,0.31,0.31}
+\definecolor{MyGrey}{rgb}{0.85,0.85,0.85}
+\usepackage{url}
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Huge\textcolor{MyNameColor}{{\fontfamily{phv}\selectfont Jerry D. Smith II}}}  & 505-565-2628 (home)\\
+23 Valencia Rd.                                      & 505-284-9782 (office) \\
+Peralta, NM                                     & 505-500-4868 (mobile) \\
+                                                          & \texttt{jerry.d.smith.ii@gmail.com} \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+%
+% TODO: Objective
+%
+\resheading{Objective}
+
+\vspace{0.1in}
+I would like to use my knowledge of Linux, HP-UX, OSX, Solaris, OS deployment, networks,
+network security, the web, high performance computing, clusters, massively
+scalable systems, high performance parallel filesystems, system administration, distributed resource management,
+relational databases, and configuration management, to create
+world-class systems and applications.
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+    \ressubheading{Los Lunas High School}{Los Lunas, NM}{Secondary studies}{Graduation 1994}
+
+\end{itemize}
+
+\vspace{0.1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% START: WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+\begin{itemize}
+\item
+    \ressubheading{Sandia National Laboratories}{Albuquerque, NM}{Enterprise Linux Architect for Oracle Systems }{November 2010 -- present}
+    \begin{itemize}
+        \resitem{Conduct day-to-day monitoring, operation, troubleshooting, user support, etc. on Oracle Enterprise Platforms.}
+        \resitem{Designed and implemented 42 node D/Q/P/DR solution for E-business Suite on Oracle Enterprise Linux.}
+        \resitem{Designed and implemented repeatable build platform utilizing kickstart and pxe for Enterprise Linux environment .}
+         \resitem{Designed and implemented configuration management  solution with Git and Puppet .}
+        \resitem{Designed and Implemented pro-active monitoring, reporting, system base lining  using Ganglia and Nagios.}
+        \resitem{Designed and implemented a large suite of tools used to manage the Oracle Enterprise Platforms.}
+    \end{itemize}
+\item
+    \ressubheading{Sandia National Laboratories .}{Albuquerque, NM}{Systems Administrator}{Jan 2003 -- Nov 2010}
+    \begin{itemize}
+        \resitem{Architecture, development, and implementation of Linux solutions with emphasis on clusters for high performance and scientific computing.}
+        \resitem{Member of the Thunderbird implementation team: \#5 on the top500 list - 8,960 compute node CPUs on SDR InfiniBand.}
+
+        \resitem{Member of engineering team who designed and implemented the Red Sky supercomputer: \#10 on the November 2009 top500 list with 433.5 TFlop/s. 43,008 cores on a 3D torus using QDR InfiniBand.}
+        \resitem{Presented OSX server cluster for Sandia National Laboratories in the ASCI booth at SC2004.}
+        \resitem{Deployed Apache web platform for the Infrastructure Computing Systems Department.}
+        \resitem{Created health-monitoring scripts that page system administrators when Linux cluster problems are detected.}
+        \resitem{Development and presentation of training materials for user and administrator communities}
+       \end{itemize}
+
+\item
+    \ressubheading{Sandia National Laboratories}{Albuquerque, NM}{Distributed Resource Management Analyst}{Jan 2003 -- Nov 2010}
+    \begin{itemize}
+       \resitem{Sandia Technical Lead for Tri-Lab "HPC Common Resource Management".}
+       \resitem{Contributor to RFI/RFP/Selection of Common Resource Management Solution}
+       \resitem{Deployment, development, and administration of Moab Scheduler}
+       \resitem{Deployment, development, and administration of Torque Resource Manager.}
+       \resitem{Deployment, development, and administration of Slurm Resource Manager.}
+       \resitem{Lead development of in house cluster accounting, utilization, and reporting along with accompanying web services to provide these metrics.}
+    \end{itemize}
+
+
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% END: WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Skills}
+\begin{description}
+\item[Languages and Programming:]  Perl, PHP, Ruby,  \LaTeX, Shell, SQL,  HTML, git, CVS, SVN, Eclipse, Netbeans.
+\item[Operating Systems:] Linux (Ubuntu, RedHat, Gentoo, Oracle Enterprise Linux), Solaris, OSX
+\item[Clustering/HPC:] PBS/Torque, Maui, Slurm, Moab, Myrinet, InfiniBand
+\item[Database:] MySQL, Oracle, PostgreSQL, SQLite
+\item[Web:] Apache, Apache C/Perl API, HTML::Mason, mod\_perl, CGI, DBI, PHP, Ruby on Rails, Tomcat, JBoss.
+\item[Miscellaneous:] Excellent troubleshooting and debugging skills, self-motivated, customer focused, and highly organized.
+\end{description}
+
+\resheading{Publications}
+\begin{itemize}
+    \item Jerry D. Smith II.  Tuning For Massive Systems; {\sl Moab-Con}.  May 28-30 , 2008, Provo, UT.
+    \item Jerry D. Smith II.  Thunderbird Capacity Computing System; {\sl LCI Conference on High Performance Computing} May 3, 2006,  Norman, OK.
+\end{itemize}
+
+\resheading{Other}
+\begin{itemize}
+    \item Active DOE ``Q''-level security clearance.
+    \item Red Hat Certified Engineer RHEL 5; cert \#805008184632534, June 27, 2008
+    \item Red Hat Certified Systems Administrator RHEL 6;  cert \#110-272-069,  July 15, 2011 
+\end{itemize}
+
+%\resheading{References}
+%\begin{itemize}
+  %   \item Available Upon Request
+ %\end{itemize}
+
+\end{document}
